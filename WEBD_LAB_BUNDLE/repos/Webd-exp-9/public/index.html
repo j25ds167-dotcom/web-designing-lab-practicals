@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Authentication</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-heading">
+      <span class="small-label">WEB DESIGNING LAB &middot; EXPERIMENT 9</span>
+      <h1>User Authentication</h1>
+      <p>Create an account or log in securely.</p>
+    </header>
+
+    <section class="auth-container" id="authContainer">
+      <!-- Registration Card -->
+      <div class="auth-card">
+        <div class="card-heading">
+          <span class="icon">&#10010;</span>
+          <h2>Register</h2>
+        </div>
+        <form id="registerForm">
+          <label for="registerEmail">Username / Email</label>
+          <input type="email" id="registerEmail" placeholder="Enter your email" autocomplete="username" required>
+
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" placeholder="Create a password (minimum 8 characters)" autocomplete="new-password" minlength="8" required>
+
+          <button type="submit">Register</button>
+          <p class="switch-text">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </form>
+        <p class="message" id="registerMessage" aria-live="polite"></p>
+      </div>
+
+      <!-- Login Card -->
+      <div class="auth-card">
+        <div class="card-heading">
+          <span class="icon">&#9679;</span>
+          <h2>Login</h2>
+        </div>
+        <form id="loginForm">
+          <label for="loginEmail">Username / Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email" autocomplete="username" required>
+
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password" required>
+
+          <button type="submit">Login</button>
+          <p class="switch-text">Don't have an account? <a href="#" id="showRegister">Register</a></p>
+        </form>
+        <p class="message" id="loginMessage" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Protected Profile -->
+    <section class="profile-card hidden" id="profileCard">
+      <div class="card-heading">
+        <span class="icon">&#10003;</span>
+        <h2>Welcome</h2>
+      </div>
+      <p id="profileEmail"></p>
+      <p class="profile-note">You have accessed a JWT-protected route.</p>
+      <button id="logoutButton" class="logout-button">Logout</button>
+      <p class="message" id="profileMessage" aria-live="polite"></p>
+    </section>
+
+    <footer>Node.js &middot; Express.js &middot; MongoDB &middot; bcrypt &middot; JSON Web Token</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

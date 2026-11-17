@@ -1,0 +1,20 @@
+body {
+  font-family: Arial;
+  background: #e8f3ff;
+}
+.box {
+  width: 340px;
+  margin: 80px auto;
+  padding: 25px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+}
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+#result {
+  margin-top: 20px;
+  line-height: 1.8;
+}

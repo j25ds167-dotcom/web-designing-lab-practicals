@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5fb;
+  color: #1e293b;
+}
+.header {
+  padding: 35px 15px;
+  text-align: center;
+  color: white;
+  background: #1769e8;
+}
+.header h1 {
+  margin: 0 0 8px;
+}
+.header p {
+  margin: 0;
+}
+.container {
+  width: min(900px, 90%);
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.card {
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  color: #1769e8;
+}
+button {
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  background: #1769e8;
+  cursor: pointer;
+}
+button:hover {
+  background: #0d4fb8;
+}
+#message {
+  color: #16803c;
+  font-weight: bold;
+}
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #64748b;
+}
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

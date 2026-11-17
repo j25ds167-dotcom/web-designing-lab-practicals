@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+}
+.card {
+  height: 100%;
+}
+.card:hover {
+  box-shadow: 0 3px 10px #999;
+}
+
+/* Styles for small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 25px !important;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "experiment-10-dynamic-app",
+  "version": "1.0.0",
+  "description": "Beginner Node.js and Express dynamic web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "experiment-9-user-authentication",
+  "version": "1.0.0",
+  "description": "User authentication using Node.js, Express, MongoDB, bcrypt and JWT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  }
+}
